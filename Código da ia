@@ -1,0 +1,50 @@
+<form id="compound-interest-calculator">
+  <label for="initial-investment">Investimento inicial:</label>
+  <input type="number" id="initial-investment" min="0" step="0.01" value="1000">
+  <br>
+  <label for="interest-rate">Taxa de juros:</label>
+  <input type="number" id="interest-rate" min="0" step="0.01" value="0.05">
+  <br>
+  <label for="periods">Períodos:</label>
+  <input type="number" id="periods" min="0" value="10">
+  <br>
+  <button type="submit">Calcular</button>
+</form>
+<form id="compound-interest-calculator">
+  <!-- Formulário e campos de entrada -->
+  <div id="result"></div>
+</form>
+#compound-interest-calculator {
+  margin: 16px;
+}
+
+#initial-investment,
+#interest-rate,
+#periods {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#result {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
+.result-label {
+  font-weight: bold;
+}
+
+.result-value {
+  margin-left: 8px;
+}
+const form = document.getElementById('compound-interest-calculator');
+const resultElement = document.getElementById('result');
+form.addEventListener('submit', (event) => {
+  // Previnir o envio do formulário
+  event.preventDefault
+
